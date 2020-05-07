@@ -1,10 +1,12 @@
-function isOdd(number){
-  return number % 2 === 1;
+function isOdd(num){
+  if (num % 2 === 1){
+    return `${num} is not even`;
+  } else {
+    return `${num} is even`;
+  }
 }
 
-var threeIsOdd = isOdd(3);
-var eightIsOdd = isOdd(8);
+console.log(isOdd(3));
+console.log(isOdd(4));
 
-console.log("3 is odd: " + threeIsOdd);
-console.log("8 is odd: " + eightIsOdd);
 
