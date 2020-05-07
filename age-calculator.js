@@ -1,5 +1,6 @@
 function ageCalculator(name, yearOfBirth, currentYear){
-  return(name + " is " + (currentYear - yearOfBirth) + " years old." );
+  let currentAge = currentYear - yearOfBirth;
+  return `${name} is ${currentAge} years old`;
 }
 
 console.log(ageCalculator("Miranda", 1983, 2015));
