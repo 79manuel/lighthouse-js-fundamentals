@@ -1,7 +1,7 @@
-function sayHello(name){
-  console.log("Hello, " + name);
-}
-sayHello("Caliban");
-sayHello("Miranda");
-sayHello("Ferdinand");
+const sayHello = function(name){
+  console.log(`Hello ${name}`);
+};
 
+sayHello("Ferdinand");
+sayHello("Gustavo");
+sayHello("Mandeep");
