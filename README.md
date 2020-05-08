@@ -1,2 +1,2 @@
 # lighthouse-js-fundamentals
-![](images/
+![](images/lighthouselabs-logo.png)
