@@ -6,5 +6,5 @@
 # Day 2 Problems
 - [Rolling Dice](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_2/dice-roller.js)
 # Day 3 Practice & Challenges
-- [Raisin' Arizona - Challenge](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_3/raisins.js)
-- [Objects - Sales Tax- Challenge](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_3/sales.js)
+- [Raisin' Arizona - Challenge](https://github.com/79manuel/lighthouse-js-fundamentals/tree/master/Day_3)
+- [Objects - Sales Tax- Challenge](https://github.com/79manuel/lighthouse-js-fundamentals/tree/master/Day_3)
