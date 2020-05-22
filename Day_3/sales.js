@@ -34,62 +34,25 @@ const companySalesData = [
  let branchReport = { };
 
 const calculateSalesTax = function(salesData, taxRates) {
-  for (let i = 0; i < companySalesData.length; i++) {
-    let branchSales = companySalesData[i].sales;
-    let totalBranchSales = branchSales.reduce(sumArr);
-    let provTax = salesTaxRates[companySalesData[i].province];
-    let totalBranchTaxes = totalBranchSales * provTax;
+  for (let i = 0; i < companySalesData.length; i++) { //Iteration over the 3 elements of the companySalesData array
+    let branchSales = companySalesData[i].sales; //Stores sales data array in a variable for each element
+    let branchTotalSales = branchSales.reduce(sumArr); //Adds all elements in sales array
+    let provTax = salesTaxRates[companySalesData[i].province]; //Stores provinces values from salesTaxRates.
+                                                              //The provinces are provided by companyDataSAles
+    let branchTotalTaxes = branchTotalSales * provTax; //Stores calculated taxes per branch.
 
-    let companyName = companySalesData[i].name;
-    if (branchReport[companyName]){
-      branchReport[companyName].totalSales += totalBranchSales;
-      branchReport[companyName].totalTaxes += totalBranchTaxes;
+    let companyName = companySalesData[i].name; // Stores company's names
+    if (branchReport[companyName]) { // Populates branchReport object with calculated sales(totalBranchSales) & total
+                                     // taxes by company.
+      branchReport[companyName].totalSales = branchTotalSales;
+      branchReport[companyName].totalTaxes = branchTotalTaxes;
     } else {
-      branchReport[companyName] = {totalSales: totalBranchSales, totalTaxes: totalBranchTaxes};
+      branchReport[companyName] = {totalSales: branchTotalSales, totalTaxes: branchTotalTaxes};
     }
-  } return branchReport;
-}
- let results = calculateSalesTax(companySalesData, salesTaxRates);
+  }
+  return branchReport;
+};
+
+let results = calculateSalesTax(companySalesData, salesTaxRates);
 console.log(results);
-
-
-
-
-
-
-
-
-
-
-//
-// function sumArr(total, num) {
-//   return total + num;
-// }
-//
-// function salesTaxReport(companySalesData, salesTaxRates) {
-//
-//   const branchReport = {}; //New object with the expected results
-//
-//   for (let i = 0; i < companySalesData.length ; i += 1) { // Iteration over the 3 elements of the companySalesData array
-//     let branchSales = companySalesData[i].sales; // Stores sales data array in a variable for each element
-//     let totalBranchSales = branchSales.reduce(sumArr); // Adds all elements in sales array
-//     let provTax = salesTaxRates[companySalesData[i].province]; // Stores provinces values from salesTaxRates.
-//                                                               // The provinces are provided by companyDataSAles
-//     let branchTax = totalBranchSales * provTax; // Stores calculated taxes per branch.
-//
-//     let companyName = companySalesData[i].name; // Stores company's names
-//     if (branchReport[companyName]) { // Populates branchReport object with calculated sales(totalBranchSales) & total
-//                                     // taxes by company
-//       branchReport[companyName].totalSales += totalBranchSales;
-//       branchReport[companyName].totalTaxes += branchTax;
-//     } else {
-//       branchReport[companyName] = {totalSales: totalBranchSales, totalTaxes: branchTax};
-//     }
-//   }
-//   return branchReport;
-//
-// };
-//
-// var results = salesTaxReport(companySalesData, salesTaxRates);
-// console.log(results);
 
