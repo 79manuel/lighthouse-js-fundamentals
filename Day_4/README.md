@@ -1,4 +1,4 @@
-# JavaScript Functions as Objects
+# 1. JavaScript Functions as Objects
 
 One of the distinctive things about JavaScript is that functions are first-class objects.
 
@@ -67,7 +67,7 @@ Functions that are passed in like this are referred to as callbacks or callback 
 
 This seemingly odd use of functions opens up interesting possibilities when thinking about what types of functions we can create. We looked at forEach as a very common use-case for callbacks.
 
-## Anonymous Functions
+# 2. Anonymous Functions
 The code example in the previous Functions As Objects exercise illustrated a (slightly oversimplified) case where a result is passed from one function (findWaldo) to a callback function.
 
 Often a callback function would not be declared or assigned to a variable, but rather would be inline like this:
@@ -82,4 +82,19 @@ Anonymous functions are often declared while being passed in as callbacks to oth
 
 ## Exercise - Refactor findWaldo
 
-[]
+[Refactor findWaldo](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_4/findWaldoAnonymously.js)
+# 3.Filtering Using Callbacks
+Another application of callback functions appears when we iterate over an array of values in order to filter down the values into a smaller list.
+
+- JavaScript's Array offers a filter method that we can use to iterate through the elements and return either true or false - indicating whether the element should be included in the results.
+- The [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method creates a new array with all elements that pass the test implemented by the provided function.
+
+Let's see it in action.
+```
+const numbers = [1, 2, 3, 4, 5, 7, 10, 14, 17, 18];
+const evens = numbers.filter(function(num) {
+ return (num % 2 == 0);
+});
+console.log("Subset of even numbers:", evens);
+```
+
