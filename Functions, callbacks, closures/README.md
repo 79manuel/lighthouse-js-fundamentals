@@ -179,3 +179,19 @@ object2: { a: 4, b: 0, c: 3 }
 
 [The Swapper](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/swapper.js)
 
+# 6. Challenge - Pythagorean Theorem
+
+The result should be an array of numbers corresponding to the x-y pairs provided in the input array (ie: calculate z given x and y).
+```
+const input = [
+  { x: 3, y: 4 },
+  { x: 12, y: 5 },
+  { x: 8, y: 15 }
+];
+const result = input.map(/* Your code here */);
+
+console.log(result[0] === 5);
+console.log(result[1] === 13);
+console.log(result[2] === 17);
+```
+[Phytagorean Theorem](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/pythagoreanTheorem.js)
