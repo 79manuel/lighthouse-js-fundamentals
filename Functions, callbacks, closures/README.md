@@ -83,7 +83,16 @@ Anonymous functions are often declared while being passed in as callbacks to oth
 ## Exercise - Refactor findWaldo
 
 [Refactor findWaldo](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_4/findWaldoAnonymously.js)
-# 3.Filtering Using Callbacks
+
+# 4. Higher-Order Functions
+Functions that take in callbacks are referred to as Higher Order Functions.
+
+Higher-Order functions are any functions which operate on other functions.
+This includes, but is not limited to, functions which take in functions (callbacks) as arguments.
+
+This means that built-in functions such as forEach, filter, and others can be called "Higher-Order Functions".
+
+## Filter()
 Another application of callback functions appears when we iterate over an array of values in order to filter down the values into a smaller list.
 
 - JavaScript's Array offers a filter method that we can use to iterate through the elements and return either true or false - indicating whether the element should be included in the results.
@@ -98,19 +107,12 @@ const evens = numbers.filter(function(num) {
 console.log("Subset of even numbers:", evens);
 ````
 
-## Challenge
+### Challenge
 
 [Filter the list down to only passing grades.](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_4/passingGradesOnly.js)
 
-# 4. Higher-Order Functions
-Functions that take in callbacks are referred to as Higher Order Functions.
 
-Higher-Order functions are any functions which operate on other functions.
-This includes, but is not limited to, functions which take in functions (callbacks) as arguments.
-
-This means that built-in functions such as forEach, filter, and others can be called "Higher-Order Functions".
-
-# Map()
+## Map()
 map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values (including undefined).
 ```
 const array1 = [1, 4, 9, 16];
@@ -129,3 +131,9 @@ You shouldn't be using map if:
 
 - you're not using the array it returns; and/or
 - you're not returning a value from the callback.
+
+[Using Map()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/mapTest.js)
+
+<div class="text-blue mb-2">
+  .text-blue on white
+</div>
