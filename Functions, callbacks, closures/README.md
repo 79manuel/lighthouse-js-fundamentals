@@ -134,7 +134,7 @@ You shouldn't be using map if:
 
 [Using Map()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/mapTest.js)
 
-## Exercise - The Swapper
+# 5. Exercise - The Swapper
 In this exercise, you will write a function that will swap values between two objects. Your function will receive four parameters:
 
 - key1, a string
@@ -178,3 +178,4 @@ object2: { a: 4, b: 0, c: 3 }
 ```
 
 [The Swapper](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/swapper.js)
+
