@@ -96,5 +96,36 @@ const evens = numbers.filter(function(num) {
  return (num % 2 == 0);
 });
 console.log("Subset of even numbers:", evens);
+````
+
+## Challenge
+
+[Filter the list down to only passing grades.](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Day_4/passingGradesOnly.js)
+
+# 4. Higher-Order Functions
+Functions that take in callbacks are referred to as Higher Order Functions.
+
+Higher-Order functions are any functions which operate on other functions.
+This includes, but is not limited to, functions which take in functions (callbacks) as arguments.
+
+This means that built-in functions such as forEach, filter, and others can be called "Higher-Order Functions".
+
+# Map()
+map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values (including undefined).
+```
+const array1 = [1, 4, 9, 16];
+   
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
 ```
 
+### When not to use map()
+Since map builds a new array, using it when you aren't using the returned array is an anti-pattern; use forEach or for-of instead.
+
+You shouldn't be using map if:
+
+- you're not using the array it returns; and/or
+- you're not returning a value from the callback.
