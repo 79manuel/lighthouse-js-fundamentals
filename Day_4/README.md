@@ -66,3 +66,20 @@ We realize this after learning that functions are values and can be treated as s
 Functions that are passed in like this are referred to as callbacks or callback functions.
 
 This seemingly odd use of functions opens up interesting possibilities when thinking about what types of functions we can create. We looked at forEach as a very common use-case for callbacks.
+
+## Anonymous Functions
+The code example in the previous Functions As Objects exercise illustrated a (slightly oversimplified) case where a result is passed from one function (findWaldo) to a callback function.
+
+Often a callback function would not be declared or assigned to a variable, but rather would be inline like this:
+```
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], function(index) {
+console.log("Waldo is located at:", index);
+});
+```
+We can notice here that the callback function defined "inline" here (function(result) { ... }) is not named, nor assigned to a variable. It exists only as an anonymous function, which is invoked by the function it gets passed into – in this example findWaldo.
+
+Anonymous functions are often declared while being passed in as callbacks to other functions. Why? Because the receiving function that takes in the anonymous function will give that parameter a name anyway.
+
+## Exercise - Refactor findWaldo
+
+[]
