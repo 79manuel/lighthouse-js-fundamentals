@@ -207,3 +207,47 @@ const students = [
 ];
 ```
 [Callbacks - For Sorting](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/sortObject.js)
+
+# 8. Closures
+JavaScript will retain the context of parent functions, meaning that it will retain references to any variables in parent functions (this is referred to as Lexical Scoping 1).
+
+When a function retains the context of a parent function, we call that a "closure".
+
+### Immediately-invoked function expression
+You can alternatively use an immediately-invoked function expression (IIFE) to achieve a similar result.
+
+```
+const foo = (function() {
+  const x = 10;
+
+  const inner = function() {
+    console.log("Value of x is: " + x);
+  }
+  return inner;
+})(); // Notice the () at the end,
+      // which will immediately invoke the function,
+      // assigning the returned value (inner) to foo
+
+foo();
+```
+### Exercise 1 – Loaded Dice
+instead of a random dice, we want to create a cheat die that would let us predict the next number. Create a function called makeLoadedDie() which returns a function that when called, seems to generate random numbers between 1 and 6, but in fact returns numbers in a row from a hardcoded list.
+```
+function makeLoadedDie() {
+  const list = [5, 4, 6, 1, 6, 4, 2, 3, 3, 5];
+  /* your code here */
+
+  return function() {
+    /* your code here */
+  }
+}
+
+const rollLoadedDie = makeLoadedDie();
+
+console.log(rollLoadedDie());  // 5
+console.log(rollLoadedDie());  // 4
+console.log(rollLoadedDie());  // 6
+```
+[Loaded Dice](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/loadedDice.js)
+
+### Exercise 2 – Countdown
