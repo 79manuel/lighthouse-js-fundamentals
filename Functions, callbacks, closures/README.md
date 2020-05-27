@@ -251,3 +251,18 @@ console.log(rollLoadedDie());  // 6
 [Loaded Dice](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/loadedDice.js)
 
 ### Exercise 2 – Countdown
+Implement a function countdownGenerator() that takes in a number x and returns a function that counts down when it is called (see starter code below).
+```
+const countdownGenerator = function (x) {
+  /* your code here */
+};
+
+const countdown = countdownGenerator(3);
+countdown(); // T-minus 3...
+countdown(); // T-minus 2...
+countdown(); // T-minus 1...
+countdown(); // Blast Off!
+countdown(); // Rockets already gone, bub!
+countdown(); // Rockets already gone, bub!
+```
+[Countdown](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Functions%2C%20callbacks%2C%20closures/countdownGenerator.js)
