@@ -85,7 +85,7 @@ const addTrackToPlaylist = function(trackId, playlistId) {
   console.log(library.playlists[playlistId].tracks);
 }
 
-addTrackToPlaylist('t03', "p01")
+//addTrackToPlaylist('t03', "p01")
 
 // generates a unique id
 // (already implemented: use this for addTrack and addPlaylist)
@@ -96,17 +96,19 @@ const generateUid = function() {
 
 // adds a track to the library
 const addTrack = function(name, artist, album) {
-  library.tracks['t04'] = {id: 't04', name: name, artist: artist, album: album}
+  library.tracks['t04'] = {id: 't04', name: name, artist: artist, album: album};
   console.log(library.tracks['t04']);
-}
 
-console.log(addTrack('test','test','test'))
+}
+addTrack("Welcome to the Jungle","Guns'N Roses","Appetite for Destruction");
 
 // adds a playlist to the library
 const addPlaylist = function(name) {
-
+  library.playlists['p03'] = {id: 'p03', name: name, tracks: ['t04'] }
+  console.log(library.playlists['p03']);
 }
 
+addPlaylist("Rock Music");
 
 // STRETCH:
 // given a query string string, prints a list of tracks
