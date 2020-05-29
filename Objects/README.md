@@ -119,3 +119,12 @@ We will need to implement the following functions:
 - printSearchResults (stretch)
 
 [Music Library](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Objects/musicLibrary.js)
+
+## Refactor Music Library
+Refactor your music library code so that the functions that operate on the library object are properties of the library object (instead of being independent functions). In other words, turn them into methods on the library object.
+
+#### Tips
+- Instead of referring to library inside of your methods, you should refer to this instead, ie. this.tracks
+- Outside of the library object, functions will need to be invoked as follows: library.printTracks()
+
+[Music Library Refactored](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Objects/musicLibraryRefactored.js)
