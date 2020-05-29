@@ -108,4 +108,4 @@ It still works! Every time our function runs into an array, it calls itself agai
 
 Recursion is such a good option here because the problem we're solving with the first array is the same problem for every nested array. It's just that each nested array is a smaller version of that main problem. This recursive function is also very easy to read. Developers should be able to look at this recursive function and be able to read through it with ease. Granted they have to be comfortable with recursion, but as developers, that's expected of us.
 
-[More recursion example](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Recursion/recursionExample2.js)
+[More Recursion example](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/Recursion/recursionExample2.js)
