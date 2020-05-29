@@ -38,7 +38,7 @@ const printPlaylists = function(object) {
     console.log(`${id}: ${name} - ${tracks.length} tracks`);
   }
 }
-//printPlaylists(library.playlists);
+printPlaylists(library.playlists);
 
 // prints a list of all tracks, using the following format:
 // t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
@@ -55,7 +55,7 @@ const printTracks = function(object) {
   }
 }
 
-//printTracks(library.tracks);
+printTracks(library.tracks);
 
 // prints a list of tracks for a given playlist, using the following format:
 // p01: Coding Music - 2 tracks
@@ -77,7 +77,7 @@ const printPlaylist = function(playlistId) {
   }
 }
 
-// printPlaylist("p02")
+printPlaylist("p02")
 
 // adds an existing track to an existing playlist
 const addTrackToPlaylist = function(trackId, playlistId) {
@@ -85,7 +85,7 @@ const addTrackToPlaylist = function(trackId, playlistId) {
   console.log(library.playlists[playlistId].tracks);
 }
 
-//addTrackToPlaylist('t03', "p01")
+addTrackToPlaylist('t03', "p01")
 
 // generates a unique id
 // (already implemented: use this for addTrack and addPlaylist)
@@ -116,5 +116,13 @@ addPlaylist("Rock Music");
 // tip: use "string".search("tri")
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search
 const printSearchResults = function(query) {
-
+  for (let track in library.tracks){
+    let search = library.tracks[track].name.search(query)
+    if (search === -1){
+    } else {
+      console.log(library.tracks[track].name);
+    }
+  }
 }
+
+printSearchResults('trol')
