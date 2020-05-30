@@ -1,0 +1,3 @@
+# Lotide
+- [eqArrays()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/eqArrays.js) -> Implements a function that can compare two arrays. It takes in two arrays and returns true or false, based on a perfect match.
+- [assertArraysEqual()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/assertArraysEqual.js) -> It takes in two arrays and console.log an appropriate message to the console.
