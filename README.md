@@ -10,3 +10,4 @@
 # [Objects](https://github.com/79manuel/lighthouse-js-fundamentals/tree/master/Objects)
 
 # [Functions, callbacks and closures](https://github.com/79manuel/lighthouse-js-fundamentals/tree/master/Functions%2C%20callbacks%2C%20closures)
+# [Recursion](https://github.com/79manuel/lighthouse-js-fundamentals/tree/master/Recursion)
