@@ -4,4 +4,5 @@
 - [without()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/without.js) -> It returns a subset of a given array, removing unwanted elements.
 - [flatten()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/flatten.js) -> It takes in an array containing elements including nested arrays of elements, and return a "flattened" version of the array.
 - [middle()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/middle.js) -> It returns an array with only the middle element(s) of the provided array. This means that the length of the returned elements could vary.
-- [countOnly()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countOnly.js) -> Given an object and a list of values, it returns the number of occurrences of each
+- [countOnly()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countOnly.js) -> Given an object and a list of values, it returns the number of occurrences of each.
+- [countLetters()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countLetters.js) -> Given a string of letters, it returns an object with the number of occurrences for each.
