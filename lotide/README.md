@@ -6,3 +6,4 @@
 - [middle()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/middle.js) -> It returns an array with only the middle element(s) of the provided array. This means that the length of the returned elements could vary.
 - [countOnly()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countOnly.js) -> Given an object and a list of values, it returns the number of occurrences of each.
 - [countLetters()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countLetters.js) -> Given a string of letters, it returns an object with the number of occurrences for each.
+- [letterPositions()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/letterPositions.js) -> It returns all the indices (zero-based positions) in the string where each character is found.
