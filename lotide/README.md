@@ -11,3 +11,4 @@
 - [eqObjects()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/eqObjects.js) -> assesses whether two objects are equal (returns true or false).
 - [assertObjectsEqual()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/assertObjectsEqual.js) -> It takes in two objects and console.log an appropriate message to the console.
 - [takeUntil()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/takeUntil.js) -> It collects items from a provided array until the callback provided returns a truthy value.
+- [findKey()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/findKey.js) -> It takes in an object and a callback. It should scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
