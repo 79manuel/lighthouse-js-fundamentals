@@ -8,3 +8,4 @@
 - [countLetters()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/countLetters.js) -> Given a string of letters, it returns an object with the number of occurrences for each.
 - [letterPositions()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/letterPositions.js) -> It returns all the indices (zero-based positions) in the string where each character is found.
 - [findKeyByValue()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/findKeyByValue.js) -> It scans the object and return the first key which contains the given value. If no key with that given value is found, then it should return undefined.
+- [eqObjects()](https://github.com/79manuel/lighthouse-js-fundamentals/blob/master/lotide/eqObjects.js) -> assesses whether two objects are equal (returns true or false)
