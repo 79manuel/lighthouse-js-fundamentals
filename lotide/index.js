@@ -9,22 +9,23 @@ const letterPositions = require('./letterPositions');
 const findKeyByValue = require('./findKeyByValue');
 const takeUntil = require('./takeUntil');
 const findKey = require('./findKey');
+const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 const assertObjectsEqual = require('./assertObjectsEqual');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  without: without,
-  flatten: flatten,
-  countOnly: countOnly,
-  countLetters: countLetters,
-  letterPositions: letterPositions,
-  findKeyByValue: findKeyByValue,
-  takeUntil: takeUntil,
-  findKey: findKey,
-  eqObjects: eqObjects,
-  assertObjectsEqual: assertObjectsEqual
+  head,
+  tail,
+  middle,
+  without,
+  flatten,
+  countOnly,
+  countLetters,
+  letterPositions,
+  findKeyByValue,
+  takeUntil,
+  findKey,
+  eqArrays,
+  eqObjects,
+  assertObjectsEqual
 };
-
