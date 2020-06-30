@@ -1,11 +1,8 @@
-function transpose(array) {
-  let tMatrix = [];
-  for (let i = 0; i < array.length; i++) {
-    tMatrix[i] = [];
-    for (let j = 0; j < array[i].length; j++) {
-      tMatrix[i][j] = array[j][i];
-    }
-  } return tMatrix;
+function transpose(a)
+{
+  return a[0].map(function (_, c) { return a.map(function (r) { return r[c]; }); });
+  // or in more modern dialect
+  // return a[0].map((_, c) => a.map(r => r[c]));
 }
 
 const printMatrix = (matrix) => {
@@ -26,14 +23,14 @@ printMatrix(transpose([
 
 console.log('----')
 
-// printMatrix(transpose([
-//   [1, 2],
-//   [3, 4],
-//   [5, 6]
-// ]));
-//
-// console.log('----')
-//
-// printMatrix(transpose([
-//   [1, 2, 3, 4, 5, 6, 7]
-// ]));
+printMatrix(transpose([
+  [1, 2],
+  [3, 4],
+  [5, 6]
+]));
+
+console.log('----')
+
+printMatrix(transpose([
+  [1, 2, 3, 4, 5, 6, 7]
+]));
