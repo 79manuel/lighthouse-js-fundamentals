@@ -1,12 +1,14 @@
+const sentence = 'Hello, this is Manuel Perez Cabello';
 
-const sentence = "hello there from lighthouse labs";
-let x = 0;
+let x = 1000;
 for (const char of sentence) {
   setTimeout(() => {
     process.stdout.write(char);
-  }, x);
+  },x);
   x += 50;
 }
+
 setTimeout(() => {
   process.stdout.write('\n');
-}, x);
+},x)
+

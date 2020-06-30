@@ -8,40 +8,41 @@
 
 let secondCount = 0;
 let stopWatch;
-let clock = document.querySelector('.clock');
+const clock = document.querySelector('.clock');
 
-function displayTime() {
-  let hours = Math.floor(secondCount/3600);
-  let minutes = Math.floor((secondCount % 3600)/60);
+function displayCount(){
+  let hours = Math.floor(secondCount / 3600);
+  let minutes = Math.floor((secondCount % 3600) / 60 );
   let seconds = Math.floor(secondCount % 60);
 
-  let displayHours = (hours < 10) ? '0' + hours : hours;
-  let displayMinutes = (minutes < 10) ? '0' + minutes : minutes;
-  let displaySeconds = (seconds < 10) ? '0' + seconds : seconds;
+  let zeroHours = (hours < 10) ? '0' + hours : hours;
+  let zeroMinutes = (minutes < 10) ? '0' + minutes : minutes;
+  let zeroSeconds = (seconds < 10) ? '0' + seconds : seconds;
 
-  clock.textContent = `${displayHours}:${displayMinutes}:${displaySeconds}`;
+  clock.textContent = `${zeroHours}:${zeroMinutes}:${zeroSeconds}`;
+
   secondCount++;
 }
 
-const startBtn = document.querySelector('.start');
-const stopBtn = document.querySelector('.stop');
-const resetBtn = document.querySelector('.reset');
+let buttonStart = document.querySelector('.start');
+let buttonStop = document.querySelector('.stop');
+let buttonReset = document.querySelector('.reset');
 
-startBtn.addEventListener('click', () => {
-  stopWatch = setInterval(displayTime, 1000);
-  startBtn.disabled = true;
+buttonStart.addEventListener('click', () => {
+  stopWatch = setInterval(displayCount, 1000);
+  buttonStart.disabled = false;
 });
 
-stopBtn.addEventListener('click', () => {
+buttonStop.addEventListener('click', () =>{
   clearInterval(stopWatch);
-  startBtn.disabled = false;
-})
+  buttonStop.disabled = false;
+});
 
-resetBtn.addEventListener('click', () => {
+buttonReset.addEventListener('click', () => {
   clearInterval(stopWatch);
   secondCount = 0;
-  startBtn.disabled = false;
-  displayTime();
+  buttonReset.disabled = false;
+  displayCount()
 })
 
-displayTime();
+displayCount();
