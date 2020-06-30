@@ -1,11 +1,14 @@
-function helloTimeout () {
-  console.log('4311o')
+function timeout () {
+  process.stdout.write('Hello ');
   setTimeout(() => {
-    console.log('th3r3');
-  }, 2000);
+    process.stdout.write('there ');
+  }, 1500);
   setTimeout(() => {
-    console.log('w0r1d');
-  }, 3000);
+    process.stdout.write('World ');
+  },3000);
+  setTimeout(() => {
+    process.stdout.write('\n');
+  }, 3500);
 }
 
-helloTimeout();
+timeout();

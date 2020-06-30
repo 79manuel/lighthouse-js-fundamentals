@@ -1,0 +1,32 @@
+body {
+    display: block;
+}
+
+.clock {
+    border: 3px solid tomato;
+    border-radius: 25px;
+    background: beige;
+    width: 50%;
+    margin: 30vh auto 0 auto;
+    text-align: center;
+    font-size: 5em;
+}
+
+.buttons {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+button {
+    width: 10em;
+    padding: 7px;
+    font-size: 17px;
+    background-color: #ff6347;
+    border-radius: 25px;
+    outline: none;
+}
+
+button:hover {
+    background: rgba(255, 99, 71, .6);
+}
